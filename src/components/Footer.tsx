@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Truck, Facebook, Twitter, LinkedIn, Instagram } from 'lucide-react';
+import { Truck, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -21,7 +21,7 @@ const Footer = () => {
             <div className="flex space-x-4">
               <Facebook className="w-5 h-5 text-gray-400 hover:text-white cursor-pointer transition-colors duration-200" />
               <Twitter className="w-5 h-5 text-gray-400 hover:text-white cursor-pointer transition-colors duration-200" />
-              <LinkedIn className="w-5 h-5 text-gray-400 hover:text-white cursor-pointer transition-colors duration-200" />
+              <Linkedin className="w-5 h-5 text-gray-400 hover:text-white cursor-pointer transition-colors duration-200" />
               <Instagram className="w-5 h-5 text-gray-400 hover:text-white cursor-pointer transition-colors duration-200" />
             </div>
           </div>
