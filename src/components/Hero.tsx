@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { ArrowRight, Shield, Clock, Globe } from 'lucide-react';
+import Autoplay from "embla-carousel-autoplay";
 import {
   Carousel,
   CarouselContent,
@@ -82,6 +83,11 @@ const Hero = () => {
           <div className="flex justify-center">
             <div className="w-full max-w-lg">
               <Carousel
+                plugins={[
+                  Autoplay({
+                    delay: 3000,
+                  }),
+                ]}
                 opts={{
                   align: "start",
                   loop: true,
