@@ -48,16 +48,61 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* LogiTrans Circle Design */}
+          {/* Logistics Vehicle Images */}
           <div className="flex justify-center">
-            <div className="w-80 h-80 bg-blue-800 rounded-full flex items-center justify-center shadow-2xl">
-              <div className="text-center">
-                <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-4xl font-bold text-blue-900">LT</span>
+            <div className="relative">
+              {/* Main Transport Vehicle */}
+              <div className="relative w-96 h-64 rounded-2xl overflow-hidden shadow-2xl group">
+                <img
+                  src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
+                  alt="Professional logistics transport vehicle"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                {/* Blue overlay blend */}
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-900/40 via-blue-800/30 to-transparent mix-blend-multiply"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-transparent to-transparent"></div>
+                
+                {/* LogiTrans Badge */}
+                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg px-4 py-2">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-8 h-8 bg-blue-900 rounded-full flex items-center justify-center">
+                      <span className="text-sm font-bold text-white">LT</span>
+                    </div>
+                    <span className="text-blue-900 font-semibold">LogiTrans</span>
+                  </div>
                 </div>
-                <h3 className="text-2xl font-bold">LogiTrans</h3>
-                <p className="text-blue-200">Moving Forward Together</p>
+
+                {/* Content overlay */}
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h3 className="text-xl font-bold mb-1">Fleet Management</h3>
+                  <p className="text-blue-100 text-sm">Professional logistics solutions</p>
+                </div>
               </div>
+
+              {/* Dispatch Bike - Positioned as overlay */}
+              <div className="absolute -bottom-6 -right-6 w-48 h-32 rounded-xl overflow-hidden shadow-xl border-4 border-white group">
+                <img
+                  src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
+                  alt="Fast dispatch motorcycle delivery"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                {/* Blue overlay blend */}
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-800/50 via-blue-700/30 to-transparent mix-blend-multiply"></div>
+                
+                {/* Speed indicator */}
+                <div className="absolute top-2 right-2 bg-blue-600/90 backdrop-blur-sm rounded-full p-2">
+                  <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+                </div>
+
+                {/* Label */}
+                <div className="absolute bottom-2 left-2 text-white">
+                  <p className="text-xs font-semibold">Express Delivery</p>
+                </div>
+              </div>
+
+              {/* Decorative elements */}
+              <div className="absolute -top-4 -left-4 w-12 h-12 bg-blue-400/20 rounded-full blur-xl"></div>
+              <div className="absolute -bottom-8 left-1/2 w-16 h-16 bg-blue-300/20 rounded-full blur-2xl"></div>
             </div>
           </div>
         </div>
