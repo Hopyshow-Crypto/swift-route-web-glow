@@ -48,13 +48,13 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Logistics Vehicle Images */}
+          {/* Logistics Vehicle Images - Expanded */}
           <div className="flex justify-center">
-            <div className="relative">
-              {/* Main Transport Vehicle */}
-              <div className="relative w-96 h-64 rounded-2xl overflow-hidden shadow-2xl group">
+            <div className="relative scale-110 lg:scale-125">
+              {/* Main Transport Vehicle - Larger */}
+              <div className="relative w-[440px] h-[300px] rounded-2xl overflow-hidden shadow-2xl group">
                 <img
-                  src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
+                  src="images/uandc_bg.png"
                   alt="Professional logistics transport vehicle"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
@@ -62,47 +62,47 @@ const Hero = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-900/40 via-blue-800/30 to-transparent mix-blend-multiply"></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-transparent to-transparent"></div>
                 
-                {/* LogiTrans Badge */}
-                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg px-4 py-2">
-                  <div className="flex items-center space-x-2">
-                    <div className="w-8 h-8 bg-blue-900 rounded-full flex items-center justify-center">
-                      <span className="text-sm font-bold text-white">LT</span>
+                {/* LogiTrans Badge - Larger */}
+                <div className="absolute top-5 left-5 bg-white/90 backdrop-blur-sm rounded-lg px-5 py-3">
+                  <div className="flex items-center space-x-3">
+                    <div className="w-10 h-10 bg-blue-900 rounded-full flex items-center justify-center">
+                      <span className="text-base font-bold text-white">U&C</span>
                     </div>
-                    <span className="text-blue-900 font-semibold">LogiTrans</span>
+                    <span className="text-blue-900 font-semibold text-lg">Wheels Logistics</span>
                   </div>
                 </div>
 
-                {/* Content overlay */}
-                <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="text-xl font-bold mb-1">Fleet Management</h3>
-                  <p className="text-blue-100 text-sm">Professional logistics solutions</p>
+                {/* Content overlay - Larger text */}
+                <div className="absolute bottom-5 left-5 text-white">
+                  <h3 className="text-2xl font-bold mb-2">Transport Services</h3>
+                  <p className="text-blue-100 text-base">& Professional logistics solutions</p>
                 </div>
               </div>
 
-              {/* Dispatch Bike - Positioned as overlay */}
-              <div className="absolute -bottom-6 -right-6 w-48 h-32 rounded-xl overflow-hidden shadow-xl border-4 border-white group">
+              {/* Dispatch Bike - Positioned as overlay and bigger */}
+              <div className="absolute -bottom-8 -right-8 w-56 h-36 rounded-xl overflow-hidden shadow-xl border-4 border-white group">
                 <img
-                  src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
+                  src="images/our-dispatch-bikes.jpg"
                   alt="Fast dispatch motorcycle delivery"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 {/* Blue overlay blend */}
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-800/50 via-blue-700/30 to-transparent mix-blend-multiply"></div>
                 
-                {/* Speed indicator */}
-                <div className="absolute top-2 right-2 bg-blue-600/90 backdrop-blur-sm rounded-full p-2">
-                  <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+                {/* Speed indicator - Larger */}
+                <div className="absolute top-3 right-3 bg-blue-600/90 backdrop-blur-sm rounded-full p-3">
+                  <div className="w-3 h-3 bg-white rounded-full animate-pulse"></div>
                 </div>
 
-                {/* Label */}
-                <div className="absolute bottom-2 left-2 text-white">
-                  <p className="text-xs font-semibold">Express Delivery</p>
+                {/* Label - Larger text */}
+                <div className="absolute bottom-3 left-3 text-white">
+                  <p className="text-sm font-semibold">Express Delivery</p>
                 </div>
               </div>
 
-              {/* Decorative elements */}
-              <div className="absolute -top-4 -left-4 w-12 h-12 bg-blue-400/20 rounded-full blur-xl"></div>
-              <div className="absolute -bottom-8 left-1/2 w-16 h-16 bg-blue-300/20 rounded-full blur-2xl"></div>
+              {/* Decorative elements - Larger */}
+              <div className="absolute -top-6 -left-6 w-16 h-16 bg-blue-400/20 rounded-full blur-xl"></div>
+              <div className="absolute -bottom-10 left-1/2 w-20 h-20 bg-blue-300/20 rounded-full blur-2xl"></div>
             </div>
           </div>
         </div>
