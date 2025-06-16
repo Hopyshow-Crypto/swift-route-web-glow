@@ -41,7 +41,7 @@ const AppPromoPage = () => {
       </div>
 
       {/* Blue App Promo Section */}
-      <div className="bg-cyan-400 py-16 px-6 flex flex-col lg:flex-row items-center justify-between max-w-7xl mx-auto rounded-lg text-left text-white gap-8">
+      <div className="bg-cyan-400 py-16 px-6 flex flex-col lg:flex-row items-center justify-center max-w-7xl mx-auto rounded-lg text-left text-white gap-12">
         {/* Text */}
         <div className="max-w-xl">
           <h3 className="text-2xl sm:text-3xl font-bold mb-4">
@@ -61,8 +61,8 @@ const AppPromoPage = () => {
         </div>
 
         {/* QR Phone Image */}
-        <div className="w-64 h-auto flex-shrink-0">
-          <img src="/images/uandc-app-phone.png" alt="QR Code on phone" className="rounded-xl shadow-lg w-full h-auto" />
+        <div className="w-64">
+          <img src="/images/uandc-app-phone.png" alt="QR Code on phone" className="rounded-xl shadow-lg" />
         </div>
       </div>
     </div>
