@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import { Menu, X, Truck } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -52,9 +53,12 @@ const Header = () => {
 
           {/* Book Online Button */}
           <div className="hidden md:block">
-            <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200 font-medium shadow-md hover:shadow-lg">
+            <Link 
+              to="/booking"
+              className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200 font-medium shadow-md hover:shadow-lg"
+            >
               Book Online
-            </button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -88,9 +92,13 @@ const Header = () => {
               >
                 Contact
               </button>
-              <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200 font-medium shadow-md w-fit">
+              <Link 
+                to="/booking"
+                className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200 font-medium shadow-md w-fit"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Book Online
-              </button>
+              </Link>
             </div>
           </div>
         )}
